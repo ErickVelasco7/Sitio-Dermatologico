@@ -94,7 +94,11 @@
       
         <div class="tarjeta">
           <div class="video-box">
-            <iframe src="https://www.youtube.com/embed/otro_video_ID" frameborder="0" allowfullscreen></iframe>
+            <video width="250" height="250" controls>
+                <source src="Sitio-Dermatologico/video4" type="video/mp4">
+        
+              </video>
+              
           </div>
           <h3><i class="fas fa-eraser"></i> Eliminación De Lunares</h3>
           <p>Procedimiento seguro para eliminar lunares sospechosos o por motivos estéticos.</p>
@@ -102,10 +106,14 @@
 
         <div class="tarjeta">
             <div class="video-box">
-              <iframe src="https://www.youtube.com/watch?v=G-dMQM41pd4&ab_channel=LaSilueta" frameborder="0" allowfullscreen></iframe>
+                <video width="250" height="250" controls>
+                    <source src="Sitio-Dermatologico/video6" type="video/mp4">
+            
+                  </video>
             </div>
             <h3><i class="fas fa-spa"></i> Rejuvenecimiento Facial</h3>
             <p>Mejora la textura y luminosidad de tu piel de forma segura.</p>
+            
           </div>
       </div>
 
@@ -151,34 +159,56 @@
             <button type="submit" class="btn"><i class="fas fa-paper-plane"></i> Enviar Mensaje</button>
         </form>
     </section>
-
     <section id="citas">
         <h2><i class="fas fa-calendar-alt"></i> Agendar Cita</h2>
         <form action="#" method="post">
             <label for="nombre-cita">Nombre:</label>
             <input type="text" id="nombre-cita" name="nombre-cita" required placeholder="Ingresa tu nombre">
-
+    
             <label for="email-cita">Correo electrónico:</label>
             <input type="email" id="email-cita" name="email-cita" required placeholder="Ingresa tu correo electrónico">
-
+    
             <label for="fecha-cita">Fecha de la cita:</label>
             <input type="date" id="fecha-cita" name="fecha-cita" required>
-
+    
             <label for="hora-cita">Hora de la cita:</label>
             <input type="time" id="hora-cita" name="hora-cita" required>
-
+    
             <label for="servicio-cita">Servicio requerido:</label>
             <select id="servicio-cita" name="servicio-cita" required>
                 <option value="cirugia-laser">Cirugía Láser</option>
                 <option value="eliminacion-lunares">Eliminación de Lunares</option>
                 <option value="rejuvenecimiento-facial">Rejuvenecimiento Facial</option>
             </select>
-
+    
+            <label for="doctor-cita">Doctor:</label>
+            <select id="doctor-cita" name="doctor-cita" required>
+                <option value="luis-gomez">Dr. Luis Gomez</option>
+                <option value="sara-rodriguez">Dra. Sara Rodríguez</option>
+                <option value="maria-suarez">Dra. María Suárez</option>
+            </select>
+    
             <button type="submit" class="btn"><i class="fas fa-calendar-check"></i> Agendar Cita</button>
         </form>
     </section>
+    <section>
+        <div class="contendermapa">
+        <div class="columna">
+        <div class="columna">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63631.68770669225!2d-74.20641283806201!3d4.597519145783159!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9a23854b42df%3A0x373637379742cb3c!2sUniversidad%20Antonio%20Nari%C3%B1o%20Sede%20Circunvalar!5e0!3m2!1ses!2sco!4v1746500465162!5m2!1ses!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+</div>
+    </div>
+        
+
+
+
+
+    </section>
+    </section>
 
     <footer>
+    
         <p>&copy; 2025 Clínica Dermatológica. Todos los derechos reservados.</p>
     </footer>
 
@@ -198,3 +228,4 @@
     </script>
 </body>
 </html>
+
