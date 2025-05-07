@@ -1,24 +1,150 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clínica Dermatológica</title>
-    <link rel="stylesheet" href="style.css">
-   
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Clínica Dermatológica</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .contenido-contacto {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .mensaje-agradecimiento {
+      flex: 1 1 400px;
+      text-align: center;
+    }
+
+    .mensaje-agradecimiento img {
+      max-width: 100%;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+
+    .formulario-contacto {
+      flex: 1 1 300px;
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .formulario-contacto h2 {
+      margin-bottom: 20px;
+      color: #006699;
+    }
+
+    form label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      resize: vertical;
+    }
+
+    form button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #006699;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    form button:hover {
+      background-color: #004d66;
+    }
+
+    .contact-info {
+      margin-top: 20px;
+    }
+
+    .info-item {
+      margin-top: 10px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .info-item i {
+      color: #006699;
+    }
+
+    @media (max-width: 768px) {
+      .contenido-contacto {
+        flex-direction: column;
+      }
+    }
+  </style>
 </head>
 <body>
-   
-    <header>
-        <h1>Clínica Dermatológica</h1>
-        <nav>
-            <ul>
-                <li><a href="#inicio"><i class="fas fa-home"></i> Inicio</a></li>
-                <li><a href="#sobre-nosotros"><i class="fas fa-users"></i> Sobre Nosotros</a></li>
-                <li><a href="#servicios"><i class="fas fa-concierge-bell"></i> Servicios</a></li>
-                <li><a href="#testimonios"><i class="fas fa-comments"></i> Testimonios</a></li>
-                <li><a href="#contacto"><i class="fas fa-phone-alt"></i> Contacto</a></li>
-                <li><a href="#citas"><i class="fas fa-calendar-alt"></i> Agendar Cita</a></li>
-            </ul>
-       
+  <section id="contacto">
+    <div class="contenido-contacto">
+      <div class="mensaje-agradecimiento">
+        <h2>¡Gracias por confiar en nosotros!</h2>
+        <p>
+          Nos alegra haberte atendido y ofrecerte el mejor servicio dermatológico. Tu salud es nuestra prioridad, y estamos comprometidos a brindarte atención de la más alta calidad. Si tienes cualquier duda o necesitas más información, no dudes en ponerte en contacto con nosotros.
+        </p>
+        <img src="agradecimiento.jpg" alt="Agradecimiento" />
+      </div>
+
+      <div class="formulario-contacto">
+        <h2><i class="fas fa-phone-alt"></i> Contacto</h2>
+        <form action="#" method="post">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required placeholder="Ingresa tu nombre" />
+
+          <label for="email">Correo electrónico:</label>
+          <input type="email" id="email" name="email" required placeholder="Ingresa tu correo electrónico" />
+
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje" rows="4" required placeholder="Escribe tu mensaje"></textarea>
+
+          <button type="submit"><i class="fas fa-paper-plane"></i> Enviar Mensaje</button>
+        </form>
+
+        <div class="contact-info">
+          <div class="info-item">
+            <i class="fas fa-phone-alt"></i>
+            <p><a href="tel:+123456789">+1 234 567 89</a></p>
+          </div>
+          <div class="info-item">
+            <i class="fab fa-whatsapp"></i>
+            <p><a href="https://wa.me/123456789" target="_blank">+1 234 567 89</a></p>
+          </div>
+          <div class="info-item">
+            <i class="fas fa-clock"></i>
+            <p>Horarios: Lunes a Viernes, 9:00 AM - 6:00 PM</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
