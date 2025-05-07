@@ -1,150 +1,80 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Clínica Dermatológica</title>
-  <link rel="stylesheet" href="style.css"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
-      color: #333;
-    }
-
-    section {
-      padding: 40px 20px;
-      max-width: 1200px;
-      margin: auto;
-    }
-
-    .contenido-contacto {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 40px;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .mensaje-agradecimiento {
-      flex: 1 1 400px;
-      text-align: center;
-    }
-
-    .mensaje-agradecimiento img {
-      max-width: 100%;
-      border-radius: 10px;
-      margin-top: 20px;
-    }
-
-    .formulario-contacto {
-      flex: 1 1 300px;
-      background-color: #ffffff;
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-
-    .formulario-contacto h2 {
-      margin-bottom: 20px;
-      color: #006699;
-    }
-
-    form label {
-      display: block;
-      margin-top: 15px;
-      font-weight: bold;
-    }
-
-    form input, form textarea {
-      width: 100%;
-      padding: 10px;
-      margin-top: 5px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      resize: vertical;
-    }
-
-    form button {
-      margin-top: 20px;
-      padding: 10px 20px;
-      background-color: #006699;
-      color: #fff;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-
-    form button:hover {
-      background-color: #004d66;
-    }
-
-    .contact-info {
-      margin-top: 20px;
-    }
-
-    .info-item {
-      margin-top: 10px;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-
-    .info-item i {
-      color: #006699;
-    }
-
-    @media (max-width: 768px) {
-      .contenido-contacto {
-        flex-direction: column;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio | Clínica Dermatológica</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-  <section id="contacto">
-    <div class="contenido-contacto">
-      <div class="mensaje-agradecimiento">
-        <h2>¡Gracias por confiar en nosotros!</h2>
-        <p>
-          Nos alegra haberte atendido y ofrecerte el mejor servicio dermatológico. Tu salud es nuestra prioridad, y estamos comprometidos a brindarte atención de la más alta calidad. Si tienes cualquier duda o necesitas más información, no dudes en ponerte en contacto con nosotros.
-        </p>
-        <img src="agradecimiento.jpg" alt="Agradecimiento" />
-      </div>
+    <section id="inicio" class="inicio-section">
+        <div class="inicio-bg"></div>
 
-      <div class="formulario-contacto">
-        <h2><i class="fas fa-phone-alt"></i> Contacto</h2>
-        <form action="#" method="post">
-          <label for="nombre">Nombre:</label>
-          <input type="text" id="nombre" name="nombre" required placeholder="Ingresa tu nombre" />
+        <div class="contenido-inicio">
+            <div class="introduccion">
+                <h1>Cuidamos tu piel, cuidamos tu bienestar</h1>
+                <p>En nuestra clínica, cada paciente recibe atención personalizada, basada en experiencia médica, tecnología avanzada y un profundo compromiso con la salud dermatológica.</p>
+            </div>
 
-          <label for="email">Correo electrónico:</label>
-          <input type="email" id="email" name="email" required placeholder="Ingresa tu correo electrónico" />
+            <h2>Bienvenido a nuestra <span class="resaltado">Clínica Dermatológica</span></h2>
+            <p>Expertos en el cuidado de tu piel, con tecnología de punta y atención personalizada.</p>
 
-          <label for="mensaje">Mensaje:</label>
-          <textarea id="mensaje" name="mensaje" rows="4" required placeholder="Escribe tu mensaje"></textarea>
+            <ul class="servicios-destacados">
+                <li><i class="fas fa-check-circle"></i> Dermatología clínica y estética</li>
+                <li><i class="fas fa-check-circle"></i> Diagnóstico y tratamiento de enfermedades cutáneas</li>
+                <li><i class="fas fa-check-circle"></i> Tecnología láser avanzada</li>
+            </ul>
 
-          <button type="submit"><i class="fas fa-paper-plane"></i> Enviar Mensaje</button>
-        </form>
-
-        <div class="contact-info">
-          <div class="info-item">
-            <i class="fas fa-phone-alt"></i>
-            <p><a href="tel:+123456789">+1 234 567 89</a></p>
-          </div>
-          <div class="info-item">
-            <i class="fab fa-whatsapp"></i>
-            <p><a href="https://wa.me/123456789" target="_blank">+1 234 567 89</a></p>
-          </div>
-          <div class="info-item">
-            <i class="fas fa-clock"></i>
-            <p>Horarios: Lunes a Viernes, 9:00 AM - 6:00 PM</p>
-          </div>
+            <div class="cta-botones">
+                <a href="citas.html" class="btn"><i class="fas fa-calendar-check"></i> Agendar Cita</a>
+                <a href="contacto.html" class="btn"><i class="fas fa-envelope"></i> Contacto</a>
+                <a href="sobre-nosotros.html" class="btn btn-secundario"><i class="fas fa-info-circle"></i> Sobre Nosotros</a>
+                <a href="servicios.html" class="btn"><i class="fas fa-stethoscope"></i> Servicios</a>
+                <a href="testimonios.html" class="btn"><i class="fas fa-comment-dots"></i> Testimonios</a>
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
+
+    <section id="por-que-elegirnos" class="por-que-elegirnos">
+        <div class="por-que-elegirnos-bg"></div>
+        
+        <div class="contenido-por-que">
+            <div class="texto-justificacion">
+                <h2>¿Por qué elegir nuestra Clínica Dermatológica?</h2>
+                <p>En nuestra clínica, nos especializamos en ofrecer soluciones dermatológicas de alta calidad. Aquí te presentamos algunas razones por las que deberías elegirnos:</p>
+                <div class="cuadros-justificacion">
+                    <div class="cuadro">
+                        <h3>Experiencia Profesional</h3>
+                        <p>Contamos con un equipo de especialistas altamente capacitados que brindan tratamientos seguros y efectivos.</p>
+                    </div>
+                    <div class="cuadro">
+                        <h3>Tecnología Avanzada</h3>
+                        <p>Utilizamos equipos de última generación que permiten diagnósticos precisos y tratamientos eficaces.</p>
+                    </div>
+                    <div class="cuadro">
+                        <h3>Atención Personalizada</h3>
+                        <p>Nos aseguramos de ofrecer un enfoque personalizado, adaptando cada tratamiento a las necesidades de nuestros pacientes.</p>
+                    </div>
+                    <div class="cuadro">
+                        <h3>Compromiso con la Salud</h3>
+                        <p>El bienestar de nuestros pacientes es nuestra prioridad. Nos aseguramos de ofrecer el mejor seguimiento en cada caso.</p>
+                    </div>
+                    <div class="cuadro">
+                        <h3>Entorno Seguro</h3>
+                        <p>Contamos con espacios higiénicos y un ambiente relajante, que garantiza la comodidad de nuestros pacientes durante todo el tratamiento.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="imagen-container">
+                <img src="imagen1.jpg" alt="Tratamientos dermatológicos" class="imagen-dermatologia">
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+        </div>
+    </section>
 </body>
 </html>
