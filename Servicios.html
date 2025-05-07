@@ -8,24 +8,84 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <section id="servicios">
-        <h2><i class="fas fa-concierge-bell"></i> Servicios</h2>
-        <div class="acordeon">
-            <button class="acordeon-btn"><i class="fas fa-laser"></i> Cirugía Láser</button>
-            <div class="panel">
-                <p>La cirugía láser permite tratar lesiones cutáneas con precisión...</p>
-            </div>
-    
-            <button class="acordeon-btn"><i class="fas fa-eraser"></i> Eliminación de Lunares</button>
-            <div class="panel">
-                <p>Procedimiento seguro para eliminar lunares sospechosos o por motivos estéticos...</p>
-            </div>
-    
-            <button class="acordeon-btn"><i class="fas fa-spa"></i> Rejuvenecimiento Facial</button>
-            <div class="panel">
-                <p>Técnicas avanzadas para mejorar la textura y apariencia de la piel del rostro...</p>
-            </div>
+
+<section id="servicios">
+    <h2><i class="fas fa-concierge-bell"></i> Servicios</h2>
+
+    <div class="acordeon">
+        
+        <button class="acordeon-btn"><i class="fas fa-laser"></i> Cirugía Láser</button>
+        <div class="panel">
+            <p><strong>Descripción:</strong> La cirugía láser permite tratar lesiones cutáneas con precisión. Utilizamos tecnología avanzada para eliminar marcas, manchas y otras imperfecciones de la piel de manera eficaz y segura.</p>
+            <p><strong>Precio:</strong> $300.000 COP</p>
+            <a href="#" class="btn">Comprar</a>
         </div>
-    </section>
+
+       
+        <button class="acordeon-btn"><i class="fas fa-eraser"></i> Eliminación de Lunares</button>
+        <div class="panel">
+            <p><strong>Descripción:</strong> Procedimiento seguro para eliminar lunares sospechosos o por motivos estéticos. Utilizamos métodos mínimamente invasivos para garantizar resultados naturales y rápidos.</p>
+            <p><strong>Precio:</strong> $150.000 COP</p>
+            <a href="#" class="btn">Comprar</a>
+        </div>
+
+      
+        <button class="acordeon-btn"><i class="fas fa-spa"></i> Rejuvenecimiento Facial</button>
+        <div class="panel">
+            <p><strong>Descripción:</strong> Técnicas avanzadas para mejorar la textura y apariencia de la piel del rostro. Esto incluye tratamientos con láser y productos anti-envejecimiento que restauran el brillo juvenil de tu piel.</p>
+            <p><strong>Precio:</strong> $250.000 COP</p>
+            <a href="#" class="btn">Comprar</a>
+        </div>
+
+        
+        <button class="acordeon-btn"><i class="fas fa-pills"></i> Tratamiento de Acné</button>
+        <div class="panel">
+            <p><strong>Descripción:</strong> Tratamientos dermatológicos especializados para eliminar el acné y sus marcas, utilizando productos adaptados a tu tipo de piel y la severidad de tu acné.</p>
+            <p><strong>Precio:</strong> $200.000 COP</p>
+            <a href="#" class="btn">Comprar</a>
+        </div>
+
+        
+        <button class="acordeon-btn"><i class="fas fa-spray-can"></i> Peeling Químico</button>
+        <div class="panel">
+            <p><strong>Descripción:</strong> El peeling químico ayuda a renovar la piel, mejorando su textura, eliminando manchas y reduciendo arrugas. Ideal para pieles con signos de envejecimiento o cicatrices.</p>
+            <p><strong>Precio:</strong> $180.000 COP</p>
+            <a href="#" class="btn">Comprar</a>
+        </div>
+
+       
+        <button class="acordeon-btn"><i class="fas fa-tint"></i> Tratamiento de Manchas</button>
+        <div class="panel">
+            <p><strong>Descripción:</strong> Tratamientos para eliminar manchas en la piel, ya sean causadas por el sol, edad o embarazo. Utilizamos técnicas avanzadas para mejorar la apariencia de tu piel.</p>
+            <p><strong>Precio:</strong> $160.000 COP</p>
+            <a href="#" class="btn">Comprar</a>
+        </div>
+    </div>
+</section>
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const acordeonBtns = document.querySelectorAll('.acordeon-btn');
+
+        acordeonBtns.forEach(function (btn) {
+            btn.addEventListener('click', function () {
+                const panel = this.nextElementSibling;
+
+          
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                  
+                    document.querySelectorAll('.panel').forEach(function (p) {
+                        p.style.maxHeight = null;
+                    });
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
+        });
+    });
+</script>
+
 </body>
 </html>
