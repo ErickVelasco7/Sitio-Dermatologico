@@ -17,19 +17,40 @@
         </div>
 
         <div class="contenedores">
-            <div class="contenedor">
+            <div class="contenedor" onclick="toggleDescripcion('doc1')">
                 <h3><i class="fas fa-user-md"></i> Luis Gomez</h3>
-                <img src="img/doc4.jpg" alt="doc1">
+                <img src="doc4.jpg" alt="Tratamientos dermatológicos" class="imagen-dermatologia">
+                <div class="descripcion" id="doc1">
+                    <p><strong>Especialidad:</strong> Dermatología estética.<br>
+                    <strong>Experiencia:</strong> Más de 10 años en el cuidado de la piel, especializado en procedimientos láser.</p>
+                </div>
             </div>
-            <div class="contenedor">
+
+            <div class="contenedor" onclick="toggleDescripcion('doc2')">
                 <h3><i class="fas fa-user-md"></i> Sara Rodriguez</h3>
-                <img src="img/doc2.jpg" alt="doc2">
+                <img src="doc5.jpg" alt="Tratamientos dermatológicos" class="imagen-dermatologia">
+                <div class="descripcion" id="doc2">
+                    <p><strong>Especialidad:</strong> Dermatología clínica y enfermedades de la piel.<br>
+                    <strong>Experiencia:</strong> Con años de experiencia en diagnóstico y tratamiento de condiciones cutáneas.</p>
+                </div>
             </div>
-            <div class="contenedor">
+
+            <div class="contenedor" onclick="toggleDescripcion('doc3')">
                 <h3><i class="fas fa-user-md"></i> Maria Suarez</h3>
-                <img src="img/doc5.jpg" alt="doc3">
+                <img src="doc2.jpg" alt="Tratamientos dermatológicos" class="imagen-dermatologia">
+                <div class="descripcion" id="doc3">
+                    <p><strong>Especialidad:</strong> Cirugía dermatológica.<br>
+                    <strong>Experiencia:</strong> Especializada en la remoción de tumores cutáneos y otras condiciones graves de la piel.</p>
+                </div>
             </div>
         </div>
     </section>
+
+    <script>
+        function toggleDescripcion(id) {
+            const descripcion = document.getElementById(id);
+            descripcion.classList.toggle('activo');
+        }
+    </script>
 </body>
 </html>
