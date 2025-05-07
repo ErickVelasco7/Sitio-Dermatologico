@@ -1,0 +1,49 @@
+
+#contacto {
+    background-color: #fafafa;
+    padding: 60px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+}
+
+.contenido-contacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+}
+
+.mensaje-agradecimiento {
+    text-align: center;
+    max-width: 450px;
+    flex: 1;
+    margin-bottom: 30px;
+}
+
+.mensaje-agradecimiento h2 {
+    font-size: 2.2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.mensaje-agradecimiento p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.imagen-agradecimiento {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+}
