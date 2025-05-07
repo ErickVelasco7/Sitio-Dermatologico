@@ -1,5 +1,6 @@
 
 
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -7,7 +8,11 @@ body {
 }
 
 header {
-    background-color: #1e90ff; 
+    background-image: url('Sitio-Dermatologico/Fondo'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-image: #1e90ff; 
     color: white;
     padding: 20px;
     text-align: center;
@@ -21,11 +26,86 @@ nav ul {
     flex-wrap: wrap;
     gap: 15px;
 }
-#contacto h2 {
-    text-align: center;
-     
-    margin-bottom: 20px; }
 
+#citas {
+    background-color: #f5faff;
+    padding: 60px 20px;
+    border-radius: 10px;
+    margin-top: 40px;
+    overflow: hidden;
+}
+
+#citas h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #1e90ff;
+}
+
+.intro-citas {
+    max-width: 700px;
+    margin: 0 auto 30px;
+    text-align: center;
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+.citas-contenido {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.formulario-cita {
+    flex: 1;
+    min-width: 320px;
+    max-width: 500px;
+}
+
+.formulario-cita form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.formulario-cita input,
+.formulario-cita select,
+.formulario-cita button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.formulario-cita button {
+    background-color: #1e90ff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.formulario-cita button:hover {
+    background-color: #0d6efd;
+}
+
+.mapa-cita {
+    flex: 1;
+    min-width: 300px;
+    max-width: 600px;
+}
+
+.mapa-cita iframe {
+    width: 100%;
+    height: 100%;
+    min-height: 420px;
+    border: 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
 nav a {
     color: white;
     text-decoration: none;
@@ -59,100 +139,185 @@ footer {
     transform: translateY(-2px);
 }
 
+
+
 #inicio {
+    position: relative;
     text-align: center;
-    background-color: #f0f8ff; 
+    color: white;
     padding: 60px 20px;
+    background-image: url('fondo.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+
+
+
+.inicio-section h1,
+.inicio-section h2,
+.inicio-section p {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+}
+
+
+.cta-botones a {
+    padding: 12px 24px;
+    background-color: rgba(30, 144, 255, 0.8); 
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cta-botones a:hover {
+    background-color: rgba(24, 123, 205, 0.8); 
+    transform: translateY(-2px);
 }
 
 #sobre-nosotros {
     text-align: center;
-    background-color: #fafafa; 
-    padding: 10px 70px;
+    background-color: #e6f0fa; 
+    padding: 60px 20px;}
 
+
+#sobre-nosotros .texto {
+    max-width: 800px;
+    margin: 0 auto 40px;
+    color: #333;
 }
+
 #sobre-nosotros .contenedores {
     display: flex;
-    flex: 1;
-    gap: 20px;
+    justify-content: center;
+    gap: 30px;
     flex-wrap: wrap;
-    min-width: 280px;
 }
 
 #sobre-nosotros .contenedor {
-    flex: 1;
-    background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-#sobre-nosotros .contenedor img {
-    width: 50%;
-    height: auto;
-    border-radius: 8px;
-    margin-top: 10px;
-}
-    
-    .cta-botones {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    flex-wrap: wrap;
-}
-.tarjetas-servicios {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 30px;
-}
-
-.tarjeta {
+    width: 280px;
     background-color: #ffffff;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     padding: 20px;
-    width: 320px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
     text-align: center;
+    cursor: pointer;
     transition: transform 0.3s ease;
 }
 
-.tarjeta:hover {
-    transform: translateY(-5px);
+#sobre-nosotros .contenedor:hover {
+    transform: scale(1.05);
 }
 
-.video-box {
+#sobre-nosotros .contenedor img {
     width: 100%;
-    aspect-ratio: 16 / 9;
-    margin-bottom: 15px;
-    border-radius: 8px;
-    overflow: hidden;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 10px;
 }
 
-.video-box iframe {
+#sobre-nosotros .descripcion {
+    display: none;
+    margin-top: 15px;
+    font-size: 1rem;
+    color: #555;
+}
+
+#sobre-nosotros .descripcion.activo {
+    display: block;
+}
+
+#sobre-nosotros h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+#sobre-nosotros .contenedor i {
+    font-size: 1.3rem;
+    color: #1e90ff;
+    margin-right: 5px;
+}
+
+#sobre-nosotros .contenedor p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+#contacto {
+    background-color: #fafafa;
+    padding: 60px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+}
+
+.contenido-contacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+}
+
+.mensaje-agradecimiento {
+    text-align: center;
+    max-width: 450px;
+    flex: 1;
+    margin-bottom: 30px;
+}
+
+.mensaje-agradecimiento h2 {
+    font-size: 2.2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.mensaje-agradecimiento p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.imagen-agradecimiento {
     width: 100%;
-    height: 100%;
-    border: none;
+    max-width: 350px;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
 }
 
+.formulario-contacto {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+}
 
+.formulario-contacto h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 30px;
+}
 
 form {
-    max-width: 600px;
-    margin: 0 auto;
-    background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 form label {
     font-weight: bold;
-    margin-top: 10px;
-    display: block;
     color: #333;
 }
 
@@ -166,37 +331,65 @@ form input, form select, form textarea {
     font-size: 16px;
 }
 
-form input[type="submit"], form button {
-    display: block;
-    width: 100%;
-    padding: 14px;
-    background-color: #1e90ff; 
-    color: white;
-    border: none;
-    border-radius: 8px;
-    font-weight: bold;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-form input[type="submit"]:hover, form button:hover {
-    background-color: #187bcd; 
-    transform: translateY(-2px);
-}
-
-form textarea {
-    resize: vertical;
-    height: 150px;
-}
-
-form input, form select, form textarea {
-    border: 1px solid #ddd;
-}
-
 form input:focus, form select:focus, form textarea:focus {
-    border-color: #1e90ff; 
+    border-color: #1e90ff;
     outline: none;
 }
 
+form button {
+    background-color: #1e90ff;
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+form button:hover {
+    background-color: #187bcd;
+    transform: translateY(-2px);
+}
+
+
+.contact-info {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.info-item {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.info-item i {
+    font-size: 1.5rem;
+    color: #1e90ff;
+}
+
+.info-item p {
+    margin: 0;
+    color: #333;
+}
+
+.info-item a {
+    color: #1e90ff;
+    text-decoration: none;
+}
+
+.info-item a:hover {
+    text-decoration: underline;
+}
 
 
 
@@ -212,40 +405,60 @@ form input:focus, form select:focus, form textarea:focus {
     transition: max-height 0.3s ease-out;
 }
 
+#testimonios {
+    background-color: #e6f0fa; 
+    padding: 60px 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#testimonios h2 {
+    font-size: 2.2rem;
+    color: #333;
+    margin-bottom: 40px;
+    text-align: center;
+}
 
 .testimonios-grid {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
     justify-content: center;
-    padding: 20px 0;
+    gap: 30px;
 }
 
 .testimonio {
-    flex: 1 1 300px;
-    max-width: 320px;
-    background-color: #f9f9f9;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    max-width: 90%;
     text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.testimonio:hover {
+    transform: translateY(-5px);
 }
 
 .testimonio .imagenes {
     display: flex;
-    gap: 10px;
     justify-content: center;
-    margin-bottom: 10px;
+    gap: 10px;
+    margin-bottom: 15px;
 }
 
 .testimonio .imagenes img {
     width: 48%;
     height: auto;
-    border-radius: 8px;
+    border-radius: 10px;
     object-fit: cover;
 }
 
-
+.testimonio p {
+    font-style: italic;
+    color: #555;
+}
 
 #citas h2 {
     text-align: center;
@@ -255,7 +468,33 @@ form input:focus, form select:focus, form textarea:focus {
     text-align: center;
 }
 
+.intro-testimonios {
+    max-width: 700px;
+    margin: 0 auto 40px;
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+}
 
+.cta-testimonios {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.cta-testimonios .btn {
+    font-size: 1rem;
+    padding: 12px 30px;
+}
+
+.cta-testimonios p {
+    margin-top: 15px;
+    font-size: 1rem;
+}
+
+.cta-testimonios p a {
+    color: #1e90ff;
+    text-decoration: underline;
+}
 
 #contacto {
     background-color: #fafafa;  
@@ -267,13 +506,21 @@ form input:focus, form select:focus, form textarea:focus {
     padding: 60px 20px;
     background-color: #f0f8ff;
     text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 #servicios h2 {
-    
-    color: #000000;
-    margin-bottom: 30px;
+    color: #333;
+    margin-bottom: 20px;
     font-weight: bold;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.acordeon {
+    margin-top: 30px;
+    padding: 0 20px;
 }
 
 .acordeon-btn {
@@ -286,7 +533,7 @@ form input:focus, form select:focus, form textarea:focus {
     cursor: pointer;
     font-size: 18px;
     border-radius: 10px;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
@@ -296,26 +543,129 @@ form input:focus, form select:focus, form textarea:focus {
     transform: translateY(-3px);
 }
 
+.panel {
+    padding: 18px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.panel p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+.panel .precio {
+    font-weight: bold;
+    color: #1e90ff;
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.panel .descripcion {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+.acordeon-btn + .panel {
+    margin-top: 10px;
+}
+
+
 .contenedormapa { 
-
-display: flex;
-justify-content: space-between;
-gap: 20px;
-
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
 }
 
 .columna { 
-
     flex: 1;
+}
 
+iframe { 
+    width: 100%;
+    height: 300px;
+    border: 0;
+}
+
+
+
+#por-que-elegirnos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff; 
+    padding: 60px 20px;
+    border-radius: 10px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.por-que-elegirnos-bg {
+    background-image: none; 
+}
+
+.contenido-por-que {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.texto-justificacion {
+    max-width: 60%;
+    margin-right: 20px;
+}
+
+.texto-justificacion h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center; 
+}
+
+.cuadros-justificacion {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start; 
+}
+
+.cuadro {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    text-align: center;
+    min-width: 250px;
+    max-width: 280px; 
+}
+
+.cuadro h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.imagen-container {
+    max-width: 35%;
+    margin-top: 140px;
+    display: flex;
+    justify-content: center; 
+}
+
+.imagen-dermatologia {
+    width: 100%;
+    height: 100%; 
+  border-radius: 10px;
     
-    }
+}
 
-    iframe { 
-width: 100%;
-height: 300px;
-border: 0;
-
-    
-        
-        }
