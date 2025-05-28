@@ -1,6 +1,4 @@
 
-
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -176,39 +174,6 @@ footer {
     transform: translateY(-2px);
 }
 
-#sobre-nosotros {
-    text-align: center;
-    background-color: #e6f0fa; 
-    padding: 60px 20px;}
-
-
-#sobre-nosotros .texto {
-    max-width: 800px;
-    margin: 0 auto 40px;
-    color: #333;
-}
-
-#sobre-nosotros .contenedores {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
-}
-
-#sobre-nosotros .contenedor {
-    width: 280px;
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-}
-
-#sobre-nosotros .contenedor:hover {
-    transform: scale(1.05);
-}
 
 #sobre-nosotros .contenedor img {
     width: 100%;
@@ -217,34 +182,6 @@ footer {
     margin-top: 10px;
 }
 
-#sobre-nosotros .descripcion {
-    display: none;
-    margin-top: 15px;
-    font-size: 1rem;
-    color: #555;
-}
-
-#sobre-nosotros .descripcion.activo {
-    display: block;
-}
-
-#sobre-nosotros h3 {
-    font-size: 1.4rem;
-    margin-bottom: 10px;
-    color: #222;
-}
-
-#sobre-nosotros .contenedor i {
-    font-size: 1.3rem;
-    color: #1e90ff;
-    margin-right: 5px;
-}
-
-#sobre-nosotros .contenedor p {
-    font-size: 1rem;
-    color: #555;
-    line-height: 1.6;
-}
 #contacto {
     background-color: #fafafa;
     padding: 60px 20px;
@@ -668,4 +605,227 @@ iframe {
   border-radius: 10px;
     
 }
+
+
+.equipo-section {
+  padding: 40px 20px;
+  background: #f9f9f9;
+  text-align: center;
+}
+.equipo-section h2 {
+  font-size: 2.2rem;
+  margin-bottom: 30px;
+  color: 1e90ff
+}
+.equipo-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.miembro-equipo {
+  max-width: 200px;
+}
+.miembro-equipo img {
+  width: 100%;
+  border-radius: 50%;
+  border: 3px #1e90ff;
+  margin-bottom: 15px;
+}
+.miembro-equipo h3 {
+  margin-bottom: 5px;
+  color: #264653;
+}
+.miembro-equipo p {
+  color: #555;
+  font-size: 1rem;
+}
+
+.testimonios-section {
+  padding: 40px 20px;
+  background: #e9f5f2;
+  text-align: center;
+}
+.testimonios-section h2 {
+  font-size: 2.2rem;
+  margin-bottom: 30px;
+  color: #264653;
+}
+.testimonios-container {
+  max-width: 800px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  gap: 25px;
+}
+.testimonios-container blockquote {
+  background: #fff;
+  padding: 20px;
+  border-left: 6px solid #2a6f9d;
+  font-style: italic;
+  color: #333;
+  border-radius: 6px;
+}
+.testimonios-container blockquote footer {
+  margin-top: 15px;
+  font-weight: bold;
+  color: #264653;
+}
+
+
+.contacto-rapido-section {
+  padding: 50px 20px;
+  background:#1e90ff;
+  color: white;
+  text-align: center;
+}
+.contacto-rapido-section h2 {
+  font-size: 2.4rem;
+  margin-bottom: 15px;
+}
+.contacto-rapido-section p {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+}
+.btn-principal {
+  background-color: #000000;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 25px;
+  margin-right: 15px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+.btn-principal:hover {
+  background-color: #ffffff;
+}
+.btn-secundario {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.btn-secundario:hover {
+  background-color: white;
+  color:#1e90ff;
+}
+
+.botones-adicionales {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.botones-adicionales .btn {
+    margin: 0 15px;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-weight: 600;
+    background-color:#1e90ff;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.botones-adicionales .btn:hover {
+    background-color:#1e90ff;
+}
+
+.sobre-nosotros-section {
+    padding: 4rem 2rem;
+    background-color: #f9f9f9;
+    font-family: 'Segoe UI', sans-serif;
+    color: #333;
+}
+
+.sobre-nosotros-section .texto {
+    max-width: 800px;
+    margin: 0 auto 3rem auto;
+    text-align: center;
+}
+
+.sobre-nosotros-section .texto h2 {
+    font-size: 2.5rem;
+    color: #0077b6;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.sobre-nosotros-section .texto p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+    color: #555;
+}
+
+
+.contenedores {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+
+.contenedor {
+    background-color: #fff;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 1.5rem;
+    width: 280px;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #e0e0e0;
+}
+
+.contenedor:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.contenedor h3 {
+    margin-bottom: 0.5rem;
+    color: #0077b6;
+    font-size: 1.2rem;
+}
+
+.contenedor i {
+    color: #0077b6;
+    margin-right: 0.3rem;
+    font-size: 1rem;
+}
+
+
+.imagen-dermatologia {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    border: 2px solid #e6f1f8;
+}
+
+
+.descripcion {
+    display: none;
+    margin-top: 1rem;
+    font-size: 0.95rem;
+    background-color: #f1f5f9;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    color: #444;
+    border-left: 3px solid #0077b6;
+}
+
+.descripcion.activo {
+    display: block;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+
 
