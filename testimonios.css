@@ -1,43 +1,226 @@
 
+
 #testimonios {
-    padding: 60px 20px;
-    background-color: #e6f0fa;
-    text-align: center;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(to bottom, #e6f0fa 0%, #f8fbff 100%);
+  padding: 60px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
 }
 
-#testimonios h2 {
-    color: #333;
-    font-size: 2.5rem;
-    margin-bottom: 30px;
+
+.contenedor-testimonios {
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
-.testimonios-contenedor {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
+
+.cabecera-testimonios {
+  text-align: center;
+  margin-bottom: 40px;
 }
+
+.cabecera-testimonios h2 {
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+  color: #1e90ff;
+}
+
+.intro-testimonios {
+  font-size: 1.1rem;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+
+.cuerpo-testimonios {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+}
+
+
+.columna-testimonios {
+  flex: 1 1 60%;
+}
+
+
+.grid-testimonios {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
 
 .testimonio {
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 300px;
-    margin: 10px;
-    text-align: center;
+  background: white;
+  border-left: 5px solid #1e90ff;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  text-align: left;
+}
+
+.testimonio:hover {
+  transform: translateY(-5px);
+}
+
+.icono-comillas {
+  font-size: 1.6rem;
+  color: #1e90ff;
+  margin-bottom: 15px;
+  display: block;
 }
 
 .testimonio p {
-    font-size: 1rem;
-    color: #555;
-    line-height: 1.6;
+  font-size: 1.05rem;
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 15px;
 }
 
 .testimonio h3 {
-    font-size: 1.3rem;
-    color: #1e90ff;
-    margin-top: 15px;
+  color: #1e90ff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+
+.bloque-info {
+  flex: 1 1 30%;
+  background-color: #ffffff;
+  border-left: 5px solid #1e90ff;
+  padding: 30px 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  color: #444;
+  max-width: 400px;
+}
+
+.bloque-info h3 {
+  color: #1e90ff;
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+}
+
+.bloque-info ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.bloque-info ul li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.bloque-info blockquote {
+  font-style: italic;
+  color: #777;
+  border-left: 4px solid #ccc;
+  padding-left: 10px;
+}
+
+
+.cta-testimonios {
+  text-align: center;
+  margin: 40px 0 50px;
+}
+
+.cta-testimonios .btn {
+  margin: 10px;
+  padding: 12px 28px;
+  background-color: #1e90ff;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.cta-testimonios .btn:hover {
+  background-color:  #1e90ff;
+}
+
+.btn-secundario {
+  background-color: #1e90ff;
+}
+
+.btn-secundario:hover {
+  background-color: #1876cc;
+}
+
+
+.formulario-testimonio {
+  margin-top: 50px;
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.formulario-testimonio h3 {
+  font-size: 1.5rem;
+  color: #1e90ff;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.formulario-testimonio form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.formulario-testimonio input,
+.formulario-testimonio textarea {
+  padding: 14px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 1rem;
+  width: 100%;
+  resize: none;
+  font-family: inherit;
+}
+
+.formulario-testimonio button {
+  align-self: center;
+  padding: 12px 32px;
+  border: none;
+  border-radius: 30px;
+  background-color:  #1e90ff;
+  color: white;
+  font-weight: 600;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.formulario-testimonio button:hover {
+  background-color:  #1e90ff;
+}
+
+
+@media (max-width: 900px) {
+  .cuerpo-testimonios {
+    flex-direction: column;
+  }
+
+  .columna-testimonios, .bloque-info {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .bloque-info {
+    margin-top: 30px;
+  }
 }
